@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                          // Modern target for React projects
+    "lib": ["DOM", "DOM.Iterable", "ESNext"], // Include modern libraries for DOM and ESNext features
+    "allowJs": true,                          // Allow JavaScript files
+    "skipLibCheck": true,                     // Skip type checks on library files
+    "esModuleInterop": true,                  // Enable ES module interoperability
+    "allowSyntheticDefaultImports": true,    // Allow default imports for modules without default exports
+    "strict": true,                           // Enable strict type checking
+    "forceConsistentCasingInFileNames": true, // Ensure imports respect file name casing
+    "noFallthroughCasesInSwitch": true,       // Prevent unintentional fallthroughs in switch statements
+    "module": "ESNext",                       // Use ESNext module system
+    "moduleResolution": "Node",              // Use Node.js module resolution
+    "resolveJsonModule": true,               // Allow importing JSON files
+    "isolatedModules": true,                 // Ensure each file can be transpiled independently
+    "noEmit": true,                          // Do not emit compiled files
+    "jsx": "react-jsx"                       // Use the new JSX transform (React 17+)
+  },
+  "include": ["src"],                        // Include the `src` directory for compilation
+  "exclude": ["node_modules", "build"]       // Exclude dependencies and output directories
+}
