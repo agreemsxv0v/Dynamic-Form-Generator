@@ -80,20 +80,6 @@ const App: React.FC = () => {
         alert("Schema reset to original!");
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        console.log("Form submitted successfully");
-    };
-
-    // Download form data as JSON
-    const downloadJSON = (formData: any) => {
-        const jsonData = JSON.stringify(formData, null, 2);
-        const blob = new Blob([jsonData], { type: "application/json" });
-        const link = document.createElement("a");
-        link.href = URL.createObjectURL(blob);
-        link.download = "form-submission.json";
-        link.click();
-    };
 
     // Toggle the theme between light and dark mode
     const toggleDarkMode = () => {
